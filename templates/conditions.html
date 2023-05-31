@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <!--<h1>I am sending data from backend to frontend by using render function</h1>
+       {% if age > 19 %}
+        <h1>statement inside if block</h1>
+        <h1>my age is {{age}}</h1>
+        {% endif %}
+       
+
+       <h1>demonstrating data from be to fe by using render function </h1>
+      {% if a > b %}
+            <h1>inside if block</h1>
+            <h1>a is greater</h1>
+            <h1>{{a}} is greater</h1>
+       {% else %}
+            <h1>b is greater</h1>
+        {% endif %}
+        
+
+        <h1>demonstrating data from be to fe by using render function </h1>
+        {% if a > b %}
+            <h1>a is max</h1>
+            {% elif b > c %}
+            <h1>b is max</h1>
+            {% else %}
+            <h1>c is max</h1>
+        {% endif %}
+        -->
+
+        <h1>demonstrating data from be to fe by using render function</h1>
+        {% if a > b %}
+            {% if a > c %}
+            <h1>a is max</h1>
+            {% else %}
+            <h1>c is max</h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+            <h1>b is max</h1>
+            {% else %}
+            <h1>c is max</h1>
+            {% endif %}
+        {% endif %}
+        
+    </center>
+</body>
+</html>
